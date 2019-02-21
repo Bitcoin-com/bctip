@@ -25,7 +25,3 @@ urlpatterns += patterns('',
     #url(r'^admin/', include(admin.site.urls)),
     url(r'qrcode/(?P<key>\w+)/$','core.views.qrcode_view', name='qrcode'),
 )
-
-if settings.BCTIP_MOD:
-    import bctip.urls_custom
-urlpatterns += bctip.urls_custom.urlpatterns
