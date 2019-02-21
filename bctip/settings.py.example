@@ -1,10 +1,10 @@
 from bctip.local_settings import *
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-     ('Andrey Perliev', 'andrey.perliev@gmail.com'),
+     ('Yourname Here', 'your_name@your_email_provider.com'),
 )
 
 MANAGERS = ADMINS
@@ -50,12 +50,12 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = '' # '/absolute/path/to/this-git-repo/static-frontend/media'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = ''
+MEDIA_URL = '' #'http://localhost:8000/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -72,6 +72,9 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    #
+    # For simplicity this git repo includes static files, so you can use
+    # '/absolute/path/to/this-git-repo/static-frontend/static',
 )
 
 # List of finder classes that know how to find static files in
@@ -113,6 +116,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    # /absolute/path/to/this-git-repo/core/templates
 )
 
 INSTALLED_APPS = (
@@ -125,8 +129,6 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.admin',
     'core',
-    'djcelery',
-    'webodt',
 )
 
 
@@ -160,14 +162,10 @@ LOGGING = {
 }
 
 BITCOIN_MINIMUM_CONFIRMATIONS = 0
-#WEBODT_CONVERTER = 'webodt.converters.abiword.AbiwordODFConverter'
-WEBODT_CONVERTER = 'webodt.converters.openoffice.OpenOfficeODFConverter'
-WEBODT_TEMPLATE_PATH = '/mnt/reliable/repos/bctip/bctip/core/templates-odt'
-OOFFICE_SERVER = ('127.0.0.1', 2002)
 
-DEFAULT_FROM_EMAIL="noreply@bctip.org"
-SERVER_EMAIL="noreply@bctip.org"
-EMAIL_HOST="10.0.3.16"
+DEFAULT_FROM_EMAIL="noreply@your_email_provider.com"
+SERVER_EMAIL="noreply@your_email_provider.com"
+EMAIL_HOST="127.0.0.1"
 
 CACHES = {
     'default': {
@@ -177,16 +175,6 @@ CACHES = {
         'KEY_PREFIX': 'bctip',
     },
 }
-
-
-#DATE_FORMAT="M d, Y"
-# for celery
-BROKER_URL = 'amqp://guest:guest@localhost:5672/'
-CELERY_RESULT_BACKEND = 'cache+memcached://10.0.3.11:11211/'
-CELERY_IMPORTS=["core.tasks"]
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
 
 #BROKER_URL = 'amqp://guest:guest@10.0.3.11:5672/'
 TEMPLATE_CONTEXT_PROCESSORS = (
