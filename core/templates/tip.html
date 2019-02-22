@@ -185,59 +185,199 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <br/>
-<div class="ui message">
-  <div class="header">How do I claim my Bitcoin Cash (BCH) tip?</div>
-  <ol class="ui list">
-    <li>
-      <a target="_blank" href="https://wallet.bitcoin.com/">Click here</a> to download the <a target="_blank" href="https://wallet.bitcoin.com/">Bitcoin.com wallet.</a>
-    </li>
-    <li>
-      Click "Receive" at the bottom of the screen
-    </li>
-    <li>
-      Tap the string of text under the QR code to copy your address to your clipboard
-    </li>
-    <li>
-      Paste your address in the "Send to" field above, labeled "Enter Bitcoin Cash (BCH) address here"
-    </li>
-  </ol>
+<div class="ui stackable two column grid">
+  <div class="column">
+    <h2 class="ui header">{% trans "How do I claim my tip" %}?</h2>
 
-  <div class="header">{% trans "How to sell" %}</div>
-  <p>
+    <div class="ui message">
+      <div class="header gold claim-steps">
+        Step 1
+      </div>
       
-      {% trans "If you want to sell your Bitcoin Cash (BCH), you can use a bitcoin exchange like" %}
-      
-      <a target="_blank" href="https://coinbase.com/">Coinbase</a>
-      
+      <p>
+        Open your Bitcoin Cash (BCH) wallet.
+      </p>
+      <p>
+        Don't have one? <a href="https://wallet.bitcoin.com/" target="_blank">Download the Bitcoin.com wallet for free!</a>
+      </p>
+      <img class="claim-steps-img" src="/static/img/phone-download.png" alt="Open your wallet" />
+      <hr class="claim-steps-hr">
+      <div class="header gold claim-steps">
+        Step 2
+      </div>  
+      <p>
+        Select "Receive"
+      </p>
+      <img class="claim-steps-img" src="/static/img/phone-receive.png" alt="Open your wallet" />  
+      <hr class="claim-steps-hr">
+      <div class="header gold claim-steps">
+        Step 3
+      </div>  
+      <p>
+        You'll see a QR code and a string of numbers and letters that begins with "bitcoincash:"
+      </p>
+      <p>
+        That's your Bitcoin Cash (BCH) address! Tap the address to copy it to your clipboard.
+      </p>
+      <img class="claim-steps-img" src="/static/img/phone-address.png" alt="Open your wallet" />
+      <hr class="claim-steps-hr">
+      <div class="header gold claim-steps">
+        Step 4
+      </div>  
+      <p>
+        Paste your address in the "Send to:" field above, and click the "Send" button. Your tip will be sent instantly.
+      </p>
+      <img class="claim-steps-img" src="/static/img/phone-payment-received.png" alt="Open your wallet" />
+    </div>
+  </div>
+  <div class="column">
+    <h2 class="ui header">{% trans "What is Bitcoin Cash (BCH)" %}?</h2>
+    <div class="ui message">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/OE3QTbgh-p8" frameborder="0" allowfullscreen style="max-width:100%"></iframe>
+    <p>{% trans "Bitcoin Cash (BCH) is a public digital currency that can be sent directly peer to peer without any third parties." %} 
+    {% trans "It is a secure and free technology that enables" %}</p>
+    <ul class="ui list">
+      <li>{% trans "Instant peer to peer transactions" %}</li>
+      <li>{% trans "Worldwide payments" %}</li>
+      <li>{% trans "Very low or zero processing fees" %}</li>
+      <li>{% trans "And much more" %}!</li>
+    </ul>
+    <p>{% trans "Bitcoin Cash (BCH) uses peer to peer technology to operate with no central authority" %}; {% trans "managing transactions and issuing bitcoins are carried out" %} <b>{% trans "collectively by the network" %}</b>. 
+    {% trans "Through many of its unique properties, Bitcoin Cash (BCH) allows exciting uses that could not be covered by any previous payment systems" %}.</p>
 
-  </p>
-  <div class="header">{% trans "How to spend" %}</div>
-  <p>
-{% trans "There are many ways, you could visit" %} <a href="https:/store.bitcoin.com/" target="_blank">our store</a> {% trans "or" %} save up to 30% off Amazon.com using <a href="https://purse.io/" target="_blank">Purse.io</a>
-</p>
+    <p>{% trans "For more information visit" %} <a href="https://bitcoincash.org/" target="_blank">bitcoincash.org</a> {% trans "or search online for" %} <a target="_new" href="http://www.google.com/search?q={% trans "Bitcoin Cash"%}">{% trans "Bitcoin Cash" %}</a>.</p>
+    </div>
+
+    <h2 class="ui header">{% trans "What can I do with my Bitcoin Cash (BCH)?" %}</h2>
+    <div class="ui message">
+      <div class="header">
+        Get 20% off from Amazon.com
+      </div>
+      <p>
+        Use <a href="https://purse.io/" target="_blank">Purse.io</a> to save 20% or more on Amazon.com products.
+      </p>
+    </div>
   
-</div>
+    <div class="ui message">
+      <div class="header">
+        Straight-up gamble
+      </div>
+      <p>
+        Check out all the classic casino games at <a href="https://games.bitcoin.com/" target="_blank">games.bitcoin.com</a>
+      </p>
+      <p>
+        Play poker with other bitcoiners around the world at <a href="https://blockchain.poker/">Blockchain.poker</a>
+      </p>
+    </div>
 
-<h2 class="ui header">{% trans "What is Bitcoin Cash (BCH)" %}?</h2>
-<div class="ui message">
-<p>{% trans "Bitcoin Cash (BCH) is a public digital currency that can be sent directly peer to peer without any third parties." %} 
-{% trans "It is a secure and free technology that enables" %}</p>
-<ul class="ui list">
-  <li>{% trans "Instant peer to peer transactions" %}</li>
-  <li>{% trans "Worldwide payments" %}</li>
-  <li>{% trans "Very low or zero processing fees" %}</li>
-  <li>{% trans "And much more" %}!</li>
-</ul>
-<p>{% trans "Bitcoin Cash (BCH) uses peer to peer technology to operate with no central authority" %}; {% trans "managing transactions and issuing bitcoins are carried out" %} <b>{% trans "collectively by the network" %}</b>. 
-{% trans "Through many of its unique properties, Bitcoin Cash (BCH) allows exciting uses that could not be covered by any previous payment systems" %}.</p>
+    <div class="ui message">
+      <div class="header">
+        Trade it for other crypto
+      </div>
+      <p>
+        Visit <a href="https://sideshift.ai/" target="_blank">Sideshift.ai</a> to trade your BCH for more than 20 other cryptocurrencies.
+      </p>
+    </div>
+    
+    <div class="ui message">
+      <div class="header">
+        Sell it for cash
+      </div>
+      <p>
+        Sell BCH for your local currency using a bitcoin exchange like <a target="_blank" href="https://coinbase.com/">Coinbase.</a>
+      </p>
+    </div>
 
-<p>{% trans "For more information visit" %} <a href="https://bitcoincash.org/" target="_blank">bitcoincash.org</a> {% trans "or search online for" %} <a target="_new" href="http://www.google.com/search?q={% trans "Bitcoin Cash"%}">{% trans "Bitcoin Cash" %}</a>.</p>
-</div>
+    <div class="ui message">
+      <div class="header">
+        Be your own notary 
+      </div>
+      <p>
+        Prove timestamped existence of a file for about $0.01 with <a target="_blank" href="https://notary.bitcoin.com/">our Notary tool.</a>
+      </p>
+    </div>
 
-<div class="ui segment mains">
-<div id="whatisbitcoin" class="row centered">
-    <iframe width="560" height="315" src="//www.youtube.com/embed/OE3QTbgh-p8" frameborder="0" allowfullscreen style="max-width:100%"></iframe>
-</div>
+    <div class="ui message">
+      <div class="header">
+        Learn more about your new asset
+      </div>
+      <p>
+        Check out how price, use, and economic fundamentals change over time with <a target="_blank" href="https://charts.bitcoin.com/bch">our Bitcoin Cash charts.</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Listen to our latest podcasts
+      </div>
+      <p>
+        Learn more about bitcoin and the future of money with <a target="_blank" href="https://podcast.bitcoin.com/">the Bitcoin.com Podcast.</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Read the latest news
+      </div>
+      <p>
+        See what's happening with Bitcoin in the world <a target="_blank" href="https://news.bitcoin.com/">at Bitcoin.com News.</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Shop
+      </div>
+      <p>
+        Spend your Bitcoin Cash (BCH) at popular retailers by using it to buy gift cards at <a target="_blank" href="https://giftcards.bitcoin.com/">giftcards.bitcoin.com</a>, or buy bitcoin swag at <a href="https://store.bitcoin.com/" target="_blank">the Bitcoin.com Store</a>.
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Get more Bitcoin Cash (BCH) for free
+      </div>
+      <p>
+        Check out the Bitcoin.com faucet at <a target="_blank" href="https://free.bitcoin.com/">free.bitcoin.com</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Put it in cold storage
+      </div>
+      <p>
+        Save your Bitcoin Cash (BCH) in an offline paper wallet by creating your own at <a target="_blank" href="https://paperwallet.bitcoin.com/">paperwallet.bitcoin.com.</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Pay it forward
+      </div>
+      <p>
+        Create more tips like the one you received at <a target="_blank" href="https://tips.bitcoin.com/">tips.bitcoin.com.</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Buy more bitcoin
+      </div>
+      <p>
+        Looking to build a bigger position? Buy bitcoin with a credit card at <a target="_blank" href="https://buy.bitcoin.com/">buy.bitcoin.com.</a>
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Watch the latest videos
+      </div>
+      <p>
+        Visit our <a target="_blank" href="https://www.youtube.com/channel/UCetxkZolEBHX47BqtZktbkg">YouTube Channel</a> for regular video updates.
+      </p>
+    </div>
+  </div>
 </div>
 
 </div>
