@@ -44,13 +44,29 @@
 </div>
 
 <br/>
-<div class="ui tiny positive message">{% trans "Advice" %}: {% trans "You can email URL of the tip to your friend" %}</div>
+<div class="ui tiny positive message">{% trans "You can also give BCH Tips by emailing or messaging the tip URL." %}</div>
 <form action="./comments/" method="post">{% csrf_token %}
 
 <table class="ui striped unstackable table">
 <thead>
 <tr><th>#ID</th>
-<th>{% trans "Comment" %} <a title='Use comments to label your tips. For example, if you save "Coffee Shop" as a comment on a tip left in a coffee shop, and that tip is later redeemed, you will receive an email confirming "Your tip with comment "Coffee Shop" was redeemed."''>(whats this?)</a></th>
+<th>
+	{% trans "Comment" %}
+	<span class="tooltip">(what's this?)
+	  <span class="tooltiptext">
+		  Use comments to label your tips!<br/><br/>
+
+		  When your tip is claimed, you'll receive an email notification including your saved comment. <br/><br/>
+
+		  Example: <br/>
+		  <ol>
+		  	<li>Save "Library" as a comment on a tip</li>
+		  	<li>Leave tip in the library</li>
+		  	<li>You'll know someone claimed your library tip when you receive an email notification with your comment "Library" ;)</li>
+		  </ol>
+	  </span>
+	<span>
+</th>
 <th>BCH<br/>{{wallet.divide_currency}}</th>
 
 <th>{% trans "Tip Link" %}<br/>{% trans "Tip Status" %}</th></tr>
