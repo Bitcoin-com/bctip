@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Gilroy;
+  src: url('/static/fonts/gilroy.woff2') format('woff2')       
+}
+
 @media screen {
  .print-tips-instructions {
   display:block;
@@ -12,7 +17,7 @@
 .print-tips {
  overflow:visible;
  display:inline;
- font-family:Montserrat,sans-serif;
+ font-family: Gilroy, Montserrat, sans-serif;
  font-size:8pt;
  margin:0 auto;
  text-align:center;
@@ -171,7 +176,7 @@
 }
 
 body {
- font-family:Montserrat,sans-serif;
+ font-family: Gilroy, Montserrat,sans-serif;
  font-size:8pt;
  margin:0 auto;
  text-align:center;
