@@ -49,6 +49,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% block header %}{%endblock%}
 </head>
 <body>
+  <div id="navbar" data-locale="en"></div>
+  <script src="http://menu.bitcoincaysh.com/dist/navbar.js"></script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N6TL56"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -385,14 +387,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <div class="ui divider"></div>
-<div class="footer">
-<!--{% trans "Support" %}: <a href="mailto:@bitcoin.com">support_placeholder@bitcoin.com</a> -->
-<!--<br/>{% trans "For donations" %}: <a href="bitcoincash:qru0g43p3j7altlw0gs0mfku6a3j6gr4zg08t293u0">bitcoincash:qru0g43p3j7altlw0gs0mfku6a3j6gr4zg08t293u0</a>-->
-<!--<br/><br/>
-{% for lang in languages %}<a href="/{{lang.code}}/">{{lang.name}}</a>{% if not forloop.last %}, {%endif%}{% endfor %}-->
-</div>
-<script>var BitcoinMenuWidth = 1140;</script>
-<script type="text/javascript" src="https://menu.cdn.bitcoindotcom.net/the-footer/dist/universal-footer.js"></script>
-<script src="https://menu.cdn.bitcoindotcom.net/the-menu/dist/universal-menu.js"></script>
+</div></div>
+<div id="footer" data-locale="en"></div>
+<script src="http://menu.bitcoincaysh.com/dist/footer.js"></script>
 </body>
 </html>

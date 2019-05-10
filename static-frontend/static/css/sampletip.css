@@ -120,7 +120,7 @@
 
 .tip-label {
   font-size: 12px;
-  color: #F59332;
+  color: #0fcb97;
   font-weight: 700;
   font-style: italic;
   margin-top: 10px;
@@ -129,7 +129,7 @@
  margin-top: 0px;
  padding:6px 0px 4px;
  text-align: center;
- background-color:#F59332;
+ background-color:#0fcb97;
  color:#fff;
 }
 
@@ -137,7 +137,7 @@
  margin-top: 0px;
  padding:5px 0px 5px;
  text-align: center;
- background-color:#F59332;
+ background-color:#0fcb97;
  color:#fff;
  font-size: 11px;
   font-weight: 600;
@@ -156,7 +156,7 @@
 .exchange-rate {
   padding:3px 0px;
  text-align: center;
- background-color:#c37e34;
+ background-color:#006531;
  color:#fff;
  font-size: 8px;
  font-weight: 600;
@@ -168,7 +168,7 @@
  padding:0 3pt;
  text-align:center;
  clear:both;
- background-color:#fab915;
+ background-color:#fff;
  color:#000
 }
 

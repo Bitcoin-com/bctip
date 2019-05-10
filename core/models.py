@@ -369,7 +369,7 @@ def get_est_fee(force=False):
         #fee = round(fee/3, 6)
         #fee = 0.00001000
         #For Bitcoin Cash, estimatefee makes more sense than estimatesmartfee
-        fee = BITCOIND.estimatefee(2)
+        fee = BITCOIND.estimatefee()
         cache.set(key, fee, 60*60)
     return fee
 
