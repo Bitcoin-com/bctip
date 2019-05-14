@@ -225,7 +225,7 @@ def wallet(request, key):
             wallet.save()
             if wallet.email:
                 send_mail('new Bitcoin.com Tips wallet', 'Congratulations!\n\nYour new BCH-Tip wallet is available at: %s/w/%s/' %
-                          (wallet.key, settings.BASEURL), 'noreply@bitcoin.com', [wallet.email], fail_silently=False)
+                          (settings.BASEURL, wallet.key), 'noreply@bitcoin.com', [wallet.email], fail_silently=False)
             # wallet.get_absolute_url()
             return HttpResponseRedirect(reverse('wallet', kwargs={'key': wallet.key}))
 
