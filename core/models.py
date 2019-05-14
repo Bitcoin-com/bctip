@@ -181,7 +181,7 @@ class Tip(models.Model):
     def get_absolute_url(self):
         #domain = "https://tips.bitcoin.com"
         #domain = "http://localhost:8000"
-        domain = settings.baseUrl
+        domain = settings.BASEURL
         return "%s/%s/" % (domain, self.key)
         
     def get_rel_url(self):
