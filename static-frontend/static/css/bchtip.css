@@ -4,8 +4,8 @@
 }
 
 body {  
-  background-color: #111724;  
-  color: #e1f0f0;
+  background-color: #fff;  
+  color: #000;
   font-family: Gilroy, Montserrat, sans-serif;
 }
 
@@ -21,11 +21,11 @@ a:hover {
 }
 .ui.header {
   font-family: Gilroy, Montserrat, sans-serif;
-  color: #fff;
+  color: #000;
 }
 .ui.header .sub.header {
   font-family: Gilroy, Montserrat, sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 .ui.bch-gold.button {
@@ -57,7 +57,7 @@ a:hover {
 
 .ui.segment.mains {
     /*background-color: #f8f8ec;*/
-    color: #fff;
+    color: #000;
     background-color:#454a4c;
 }
 .ui.segment{
@@ -90,8 +90,8 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #353839;
-  border: 1px solid #525759;
+  background-color: #fff;
+  border: 1px solid #111724;
   border-radius: 3px;
 }
 .mb-3 {
@@ -100,7 +100,7 @@ a:hover {
 .card-header {
   padding: .75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #464a4c;
+  background-color: #111724;
   border-bottom: 1px solid #525759;
 }
 .card-header:first-child {
@@ -165,7 +165,7 @@ a {
 }
 
 .balancewarning {
-  color: #fff;
+  color: #000;
 }
 
 .ui .label > a {
@@ -255,7 +255,7 @@ a {
 footer {
   border-top: 1px solid #111724 !important;
   color: #c2c9cc !important;
-  background: #090c13 url("../img/footer_bg.jpg") center 0 no-repeat !important;
+  background-color: #111724 !important;
   background-color: rgb(9, 12, 19) !important;
   background-size: auto !important;
   background-size: cover !important;

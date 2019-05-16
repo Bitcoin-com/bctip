@@ -19,7 +19,8 @@ header .container {
   width: 100%;
 }
 .section-1 {
-  background: url('/static/img/hand-off.jpg');
+  /*background: url('/static/img/hand-off.jpg');*/
+  background-color: #111724;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
