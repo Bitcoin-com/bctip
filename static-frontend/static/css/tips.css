@@ -1,3 +1,54 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/static/fonts/gilroy/Gilroy-Medium.eot');
+  src: url('/static/fonts/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/static/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+    url('/static/fonts/gilroy/Gilroy-Medium.woff') format('woff'),
+    url('/static/fonts/gilroy/Gilroy-Medium.ttf') format('ttf'),
+    url('/static/fonts/gilroy/Gilroy-Medium.svg') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/static/fonts/gilroy/Gilroy-SemiBold.eot');
+  src: url('/static/fonts/gilroy/Gilroy-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.woff2') format('woff2'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.woff') format('woff'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.ttf') format('ttf'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.svg#Gilroy-SemiBold') format('svg');
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/static/fonts/gilroy/Gilroy-Bold.eot');
+  src: url('/static/fonts/gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/static/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+    url('/static/fonts/gilroy/Gilroy-Bold.woff') format('woff'),
+    url('/static/fonts/gilroy/Gilroy-Bold.ttf') format('ttf'),
+    url('/static/fonts/gilroy/Gilroy-Bold.svg') format('svg');
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: Gilroy, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen {
  .print-tips-instructions {
   display:block;
@@ -12,7 +63,7 @@
 .print-tips {
  overflow:visible;
  display:inline;
- font-family:Montserrat,sans-serif;
+ font-family: Gilroy, Montserrat, sans-serif;
  font-size:8pt;
  margin:0 auto;
  text-align:center;
@@ -37,7 +88,7 @@
  page-break-inside:avoid;
  page-break-after:auto;
  display:inline-block;
- background-color:#fab915;
+ background-color:#0fcb97;
  color:#000;
  padding:0;
  margin:0;
@@ -83,7 +134,7 @@
  padding:0 3pt;
  text-align:center;
  font-size:7pt;
- background-color:#fab915;
+ background-color:#0fcb97;
  color:#000;
  height:7mm
 }
@@ -114,7 +165,7 @@
 
 .tip-label {
   font-size: 12px;
-  color: #F59332;
+  color: #0fcb97;
   font-weight: 700;
   font-style: italic;
   margin-top: 10px;
@@ -123,7 +174,7 @@
  margin-top: 0px;
  padding:6px 0px 4px;
  text-align: center;
- background-color:#F59332;
+ background-color:#0fcb97;
  color:#fff;
 }
 
@@ -131,7 +182,7 @@
  margin-top: 0px;
  padding:5px 0px 5px;
  text-align: center;
- background-color:#F59332;
+ background-color:#0fcb97;
  color:#fff;
  font-size: 11px;
   font-weight: 600;
@@ -150,7 +201,7 @@
 .exchange-rate {
   padding:3px 0px;
  text-align: center;
- background-color:#c37e34;
+ background-color:#006531;
  color:#fff;
  font-size: 8px;
  font-weight: 600;
@@ -162,7 +213,7 @@
  padding:0 3pt;
  text-align:center;
  clear:both;
- background-color:#fab915;
+ background-color:#0fcb97;
  color:#000
 }
 
@@ -171,7 +222,7 @@
 }
 
 body {
- font-family:Montserrat,sans-serif;
+ font-family: Gilroy, Montserrat,sans-serif;
  font-size:8pt;
  margin:0 auto;
  text-align:center;
@@ -195,8 +246,8 @@ body .print-tip, body .print-tip-message {
 
 
 body .print-tip-message {
-    color: #4d4d4d   
-;
+  color: #4d4d4d;
+  word-wrap: break-word;
 }
 
 body .print-tip-link p.link-key, body .print-tip-link p.link-url strong {

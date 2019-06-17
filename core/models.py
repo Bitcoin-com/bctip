@@ -179,8 +179,9 @@ class Tip(models.Model):
         return u"%s: %s" % (self.wallet, self.balance_btc)
 
     def get_absolute_url(self):
-        domain = "https://tips.bitcoin.com"
+        #domain = "https://tips.bitcoin.com"
         #domain = "http://localhost:8000"
+        domain = settings.BASEURL
         return "%s/%s/" % (domain, self.key)
         
     def get_rel_url(self):
@@ -369,7 +370,7 @@ def get_est_fee(force=False):
         #fee = round(fee/3, 6)
         #fee = 0.00001000
         #For Bitcoin Cash, estimatefee makes more sense than estimatesmartfee
-        fee = BITCOIND.estimatefee(2)
+        fee = BITCOIND.estimatefee()
         cache.set(key, fee, 60*60)
     return fee
 

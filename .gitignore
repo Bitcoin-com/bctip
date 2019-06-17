@@ -1,5 +1,7 @@
 *.mo
 *.pyc
+env/
+mydatabase
 /static/
 bctip/local_settings.py
 bctip/settings.py

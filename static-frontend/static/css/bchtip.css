@@ -1,34 +1,83 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/static/fonts/gilroy/Gilroy-Medium.eot');
+  src: url('/static/fonts/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/static/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+    url('/static/fonts/gilroy/Gilroy-Medium.woff') format('woff'),
+    url('/static/fonts/gilroy/Gilroy-Medium.ttf') format('ttf'),
+    url('/static/fonts/gilroy/Gilroy-Medium.svg') format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/static/fonts/gilroy/Gilroy-SemiBold.eot');
+  src: url('/static/fonts/gilroy/Gilroy-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.woff2') format('woff2'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.woff') format('woff'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.ttf') format('ttf'),
+    url('/static/fonts/gilroy/Gilroy-SemiBold.svg#Gilroy-SemiBold') format('svg');
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/static/fonts/gilroy/Gilroy-Bold.eot');
+  src: url('/static/fonts/gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/static/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+    url('/static/fonts/gilroy/Gilroy-Bold.woff') format('woff'),
+    url('/static/fonts/gilroy/Gilroy-Bold.ttf') format('ttf'),
+    url('/static/fonts/gilroy/Gilroy-Bold.svg') format('svg');
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
 body {
-  /*background-color: #10719a;*/
-  background-color: #292b2c;
-  /*background-color: #e0873f;*/
-  color: #e1f0f0;
-  font-family: Montserrat, sans-serif;
+  font-family: Gilroy, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {  
+  background-color: #fff;  
+  color: #000;
+  font-family: Gilroy, Montserrat, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: Montserrat, sans-serif;
+  font-family: Gilroy, Montserrat, sans-serif;
 }
 a {
-  color:#fab915;
+  color:#0fcb97;
 }
 a:hover {
-  color: #fab915;
+  color: #0fcb97;
   text-decoration: underline;
 }
 .ui.header {
-  font-family: Montserrat, sans-serif;
-  color: #fff;
+  font-family: Gilroy, Montserrat, sans-serif;
+  color: #000;
 }
 .ui.header .sub.header {
-  font-family: Montserrat, sans-serif;
-  color: #fff;
+  font-family: Gilroy, Montserrat, sans-serif;
+  color: #000;
 }
 
 .ui.bch-gold.button {
   color:#000;
-  background-color: #fab915;  
-  font-family: Montserrat,sans-serif;
+  background-color: #0fcb97;
+  font-family: Gilroy, Montserrat,sans-serif;
 }
 .ui.submit.bch-gold.button.printbtn {
   margin-left: 1rem;
@@ -48,13 +97,13 @@ a:hover {
 
 .ui.bch-gold.button:hover {
   color:#fff;
-  background-color: #E7A603!important;
+  background-color: #17e9af!important;
   transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
 }
 
 .ui.segment.mains {
     /*background-color: #f8f8ec;*/
-    color: #fff;
+    color: #000;
     background-color:#454a4c;
 }
 .ui.segment{
@@ -87,9 +136,9 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #353839;
-  border: 1px solid #525759;
-  border-radius: .25rem;
+  background-color: #fff;
+  border: 1px solid #111724;
+  border-radius: 3px;
 }
 .mb-3 {
   margin-bottom: 1rem !important;
@@ -97,14 +146,14 @@ a:hover {
 .card-header {
   padding: .75rem 1.25rem;
   margin-bottom: 0;
-  background-color: #464a4c;
+  background-color: #111724;
   border-bottom: 1px solid #525759;
 }
 .card-header:first-child {
-  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+  border-radius: calc(3px - 1px) calc(3px - 1px) 0 0;
 }
 .faq-header {
-  color: #fab915;
+  color: #0fcb97;
 }
 .card-block {
   flex: 1 1 auto;
@@ -157,12 +206,12 @@ a {
   box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
   margin: 1rem 0;
   padding: 1em 1em;
-  border-radius: .28571429rem;
+  border-radius: 3px;
   border: 1px solid rgba(34,36,38,.15);
 }
 
 .balancewarning {
-  color: #fff;
+  color: #000;
 }
 
 .ui .label > a {
@@ -174,7 +223,7 @@ a {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  color: #fab915;
+  color: #0fcb97;
   font-weight: bold;
 }
 
@@ -183,9 +232,9 @@ a {
   visibility: hidden;
   width: 350px;
   background-color: black;
-  color: #fab915;  
+  color: #0fcb97;  
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 3px;
   font-weight: normal;
  
   /* Position the tooltip text - see examples below! */
@@ -210,13 +259,13 @@ a {
 
 .header.gold.claim-steps {
   padding-top:12px;
-  color: #fab915;
+  color: #0fcb97;
   font-size: 22px !important;
   margin-bottom: 16px !important;
 }
 
 .claim-steps-hr {
-  border: 1px solid #fab915;
+  border: 1px solid #0fcb97;
 }
 
 .claim-steps-img {
@@ -224,4 +273,111 @@ a {
   padding: 12px;
   display: block;
   margin:auto;
+}
+/*Menu over-rides*/
+.styled__StickyWrap-sc-1ptc0g7-2 {
+  background-color: #fff !important;
+}
+.styled__InnerWrapper-sc-1ptc0g7-1 {
+  background-color: #fff !important;
+}
+.jXSAlU > a {
+  color: rgb(19, 23, 32) !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+}
+/*Footer over-rides*/
+@media screen and (min-width:960px) {
+
+
+.kZOqIE {
+  background-color: rgb(17, 23, 36) !important;
+  color: rgb(255, 255, 255) !important;
+  width: 100% !important;
+  padding-bottom: 64px !important;
+  padding-top: 32px !important;
+}
+
+footer {
+  border-top: 1px solid #111724 !important;
+  color: #c2c9cc !important;
+  background-color: #111724 !important;
+  background-color: rgb(9, 12, 19) !important;
+  background-size: auto !important;
+  background-size: cover !important;
+}
+.kZOqIE > section {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  padding-top: 0px !important;
+}
+.iVnMXI {
+  padding: 135px !important;
+}
+.iVnMXI {
+  display: flex !important;
+  -moz-box-pack: justify !important;
+  justify-content: space-between !important;
+  flex-direction: column !important;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1440px !important;
+  margin: auto !important;
+  padding: 0px 16px !important;
+  box-sizing: border-box !important;
+}
+.ifcuFj { 
+  margin-top: 0px !important;
+  order: 1 !important;
+  flex-basis: 20% !important;
+  margin-right: 64px !important;
+  flex-shrink: 0 !important;
+}
+.ifcuFj > p {
+  margin: 8px 0px 0px !important;
+}
+.kZOqIE p {
+  font-size: 16px !important;
+}
+.kZOqIE {
+  font-size: 16px !important;
+}
+.fKgNfK {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Gilroy", sans-serif !important;
+  max-width: 500px !important;
+  letter-spacing: 0px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  padding-bottom: 24px !important;
+}
+
+.kmDcyI {
+  display: block !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  margin: 0px 0px 32px !important;
+  padding: 0px !important;;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% !important;
+  border: medium none !important;
+  outline: currentcolor none medium !important;
+  cursor: pointer !important;
+  font-weight: 700 !important; 
+  text-align: left !important;
+  width: 100% !important;
+}
+.huUExZ > a {
+  display: block !important;
+text-decoration: none !important;
+color: rgba(255, 255, 255, 0.59) !important;
+text-align: left !important;
+font-weight: 400 !important;
+cursor: pointer !important;
+margin-bottom: 4px !important;
+}
+footer a:hover {
+  color: #0fcb97 !important;
+}
 }

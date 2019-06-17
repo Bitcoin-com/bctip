@@ -224,8 +224,8 @@ def wallet(request, key):
                 pap_total = round(pap_total, 8)
             wallet.save()
             if wallet.email:
-                send_mail('new Bitcoin.com Tips wallet', 'Congratulations!\n\nYour new BCH-Tip wallet is available at: https://tips.bitcoin.com/w/%s/' %
-                          (wallet.key), 'noreply@bitcoin.com', [wallet.email], fail_silently=False)
+                send_mail('new Bitcoin.com Tips wallet', 'Congratulations!\n\nYour new BCH-Tip wallet is available at: %s/w/%s/' %
+                          (settings.BASEURL, wallet.key), 'noreply@bitcoin.com', [wallet.email], fail_silently=False)
             # wallet.get_absolute_url()
             return HttpResponseRedirect(reverse('wallet', kwargs={'key': wallet.key}))
 
@@ -368,8 +368,8 @@ def tip(request, key):
                 wcomment = ""
                 if tip.comment:
                     wcomment = 'with comment "%s" ' % tip.comment
-                send_mail('Your Bitcoin.com BCH tip has been claimed', 'Bitcoin.com BCH Tip https://tips.bitcoin.com/%s/ %shas been claimed.' %
-                          (tip.key, wcomment), 'noreply@bitcoin.com', [tip.wallet.email], fail_silently=True)
+                send_mail('Your Bitcoin.com BCH tip has been claimed', 'Bitcoin.com BCH Tip %s/%s/ %shas been claimed.' %
+                          (settings.BASEURL, tip.key, wcomment), 'noreply@bitcoin.com', [tip.wallet.email], fail_silently=True)
             tip_bcaddr = tip.bcaddr
     else:
         initial = {'bcamount': tip.balance_btc}
