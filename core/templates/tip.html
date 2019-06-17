@@ -5,7 +5,7 @@
 <meta name="language" content="{{request.LANGUAGE_CODE}}" />
 <title>{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}</title>
 <meta name="keywords" content="{% trans "Bitcoin" %}, {% trans "tips" %}" />
-<meta property="og:image" content="https://news.bitcoin.com/wp-content/uploads/2017/12/landing_fb.jpg"/> 
+<meta property="og:image" content="https://tips.bitcoin.com/static/img/card_default.png"/> 
 <meta name="description" content="{% trans "Print redeemable Bitcoin Cash (BCH) tips with Bitcoin.com Tips" %}. {% trans "Each Tip has a unique URL" %}." />
 <meta property="og:url" content="https://tips.bitcoin.com" />
 <meta property="og:title" content="{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}"/>
@@ -19,7 +19,7 @@
 <meta name="twitter:title" content="{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}">
 <meta name="twitter:description" content="{% if not tip.activated and not tip.expired %}Be the first to enter your Bitcoin Cash (BCH) address and instantly collect {{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %} of BCH!{% elif tip.activated and not tip.expired %}Someone already claimed this one! Create your own at tips.bitcoin.com.{% else %} This tip went unclaimed and has been returned to its owner. Create your own at tips.bitcoin.com{% endif %}" />
 <meta property="og:site_name" content="tips.bitcoin.com">
-<meta name="twitter:image" content="https://tips.bitcoin.com/static/img/tips-twitter-card4.jpg">
+<meta name="twitter:image" content="https://tips.bitcoin.com/static/img/card_default.png">
 
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="shortcut icon" href="/static/img/favicon.png" />
@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body>
   <div id="bitcoincom-uc-navbar" data-languages="false"></div>
-  <script src="https://menu.bitcoincaysh.com/dist/navbar.js"></script>
+  <script src="https://menu.cdn.bitcoindotcom.net/uni/dist/navbar.js"></script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N6TL56"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -389,6 +389,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="ui divider"></div>
 </div></div>
 <div id="bitcoincom-uc-footer"></div>
-<script src="https://menu.bitcoincaysh.com/dist/footer.js"></script>
+<script src="https://menu.cdn.bitcoindotcom.net/uni/dist/footer.js"></script>
 </body>
 </html>
