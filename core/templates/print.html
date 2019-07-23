@@ -1,9 +1,10 @@
 {% block content %}
+{% load i18n %}
 <!doctype html>
 <html>
 	<head>
 	  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	  <title>Print Your Tips - Bitcoin.com BCH Tips</title>	
+	  <title>{% trans "Print Your Tips - Bitcoin.com BCH Tips" %}</title>	
 	
 	  <link rel="stylesheet" type="text/css" href="/static/css/tips.css?version-0.1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
@@ -12,8 +13,8 @@
 <body>
   <div id="primaryContent" class="pageContent">
     <div class="print-tips-instructions">
-      <h1>Print</h1>
-      <p>To print, select Print from your browser's menu.</p>   
+      <h1>{% trans "Print" %}</h1>
+      <p>{% trans "To print, select Print from your browser's menu" %}.</p>   
     </div>    
 
 <div class="print-tips">
@@ -24,7 +25,7 @@
     </div>
 
     <div class="print-tip-bg-wrap">
-      <div class="tip-label">TIP AMOUNT</div>
+      <div class="tip-label">{% trans "TIP AMOUNT" %}</div>
       <div class="print-tip-amount">
         <div class="crypto-amount">{{tip.balance_btc}} BCH</div>
         {% if tip.wallet.divide_currency == "JPY" %}
@@ -48,14 +49,14 @@
     </div>     
     
     <div class="print-tip-link">      
-      <div class="tip-label">CLAIM YOUR TIP AT:</div>
+      <div class="tip-label">{% trans "CLAIM YOUR TIP AT" %}:</div>
       <div class="print-tip-url">tips.bitcoin.com/{{tip.get_rel_url}}</div>
     </div>
 
-    <div class="exchange-rate">Claim by {{tip.etime|date:"M d, Y"}}</div>
+    <div class="exchange-rate">{% trans "Claim by" %} {{tip.etime|date:"M d, Y"}}</div>
 
     <div class="message-ctn">
-      <p>Message</p>
+      <p>{% trans "Message" %}</p>
       <div class="print-tip-message">{{wallet.message}}</div>
     </div>
 
