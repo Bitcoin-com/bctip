@@ -296,7 +296,7 @@ msgstr ""
 ## 500.html
 
 # core/templates/500.html:8
-msgid "Please be patient, we try to fix ASAP"
+msgid "We will resolve the issue as soon as possible."
 msgstr ""
 
 ## not_enough.html
