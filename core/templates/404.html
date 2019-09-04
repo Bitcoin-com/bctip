@@ -6,11 +6,11 @@
 <h1 class="ui header">404 {% trans "Error" %}</h1>
 
 {% if 'print' in request.path %}
-<div class="ui large message">If you are receiving this message after clicking "Print Tips," please refresh your browser window.</div>
+<div class="ui large message">{% trans "If you are receiving this message after clicking "Print Tips," please refresh your browser window" %}.</div>
 {% else %}
-<div class="ui large message">URL does not exist.</div>
+<div class="ui large message">{% trans "URL does not exist" %}.</div>
 {% endif %}
 <br/>
-<a class="ui bch-gold button" href="{% url 'home' %}">Go to the main page</a>
+<a class="ui bch-gold button" href="{% url 'home' %}">{% trans "Go to the main page" %}</a>
 
 {% endblock %}

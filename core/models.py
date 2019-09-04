@@ -24,9 +24,9 @@ CURRENCY_RATES = {'USD': 1, 'EUR': 0.88, 'GBP': 0.79, 'JPY': 109.76}
 
 CURRENCY_SIGNS = {'USD': '$', 'EUR': '€', 'GBP': '£', 'JPY': '¥'}
 MESSAGES = {}
-THANKS_MESSAGE = _("Thank you for your service!")
+THANKS_MESSAGE = _("Thank you!")
 # Translators: Please provide youtube video about bitcoin in your language
-LOCALIZED_YOUTUBE_URL = _("www.youtube.com/embed/Gc2en3nHxA4")
+LOCALIZED_YOUTUBE_URL = _("www.youtube.com/embed/OE3QTbgh-p8")
 
 
 class Wallet(models.Model):
