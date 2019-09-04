@@ -3,21 +3,21 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="language" content="{{request.LANGUAGE_CODE}}" />
-<title>{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}</title>
+<title>{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'AUD' %}{{AUD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'CAD' %}{{CAD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}</title>
 <meta name="keywords" content="{% trans "Bitcoin" %}, {% trans "tips" %}" />
 <meta property="og:image" content="https://tips.bitcoin.com/static/img/card_default.png"/> 
 <meta name="description" content="{% trans "Print redeemable Bitcoin Cash (BCH) tips with Bitcoin.com Tips" %}. {% trans "Each Tip has a unique URL" %}." />
 <meta property="og:url" content="https://tips.bitcoin.com" />
-<meta property="og:title" content="{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}"/>
-<meta property="og:description" content="{% if not tip.activated and not tip.expired %}Be the first to enter your Bitcoin Cash (BCH) address and instantly collect {{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %} of BCH!{% elif tip.activated and not tip.expired %}Someone already claimed this one! Create your own at tips.bitcoin.com.{% else %} This tip went unclaimed and has been returned to its owner. Create your own at tips.bitcoin.com{% endif %}" />
+<meta property="og:title" content="{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'AUD' %}{{AUD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'CAD' %}{{CAD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}"/>
+<meta property="og:description" content="{% if not tip.activated and not tip.expired %}Be the first to enter your Bitcoin Cash (BCH) address and instantly collect {{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'AUD' %}{{AUD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'CAD' %}{{CAD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %} of BCH!{% elif tip.activated and not tip.expired %}Someone already claimed this one! Create your own at tips.bitcoin.com.{% else %} This tip went unclaimed and has been returned to its owner. Create your own at tips.bitcoin.com{% endif %}" />
 <meta property="og:site_name" content="tips.bitcoin.com" />
 <meta property="og:type" content="website" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@BTCTN">
-<meta name="twitter:title" content="{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}">
-<meta name="twitter:description" content="{% if not tip.activated and not tip.expired %}Be the first to enter your Bitcoin Cash (BCH) address and instantly collect {{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %} of BCH!{% elif tip.activated and not tip.expired %}Someone already claimed this one! Create your own at tips.bitcoin.com.{% else %} This tip went unclaimed and has been returned to its owner. Create your own at tips.bitcoin.com{% endif %}" />
+<meta name="twitter:title" content="{{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'AUD' %}{{AUD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'CAD' %}{{CAD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %}{% if not tip.activated and not tip.expired %} is ready to claim!{% elif tip.activated and not tip.expired %} has been claimed{% else %} has expired{% endif %}">
+<meta name="twitter:description" content="{% if not tip.activated and not tip.expired %}Be the first to enter your Bitcoin Cash (BCH) address and instantly collect {{tip.wallet.divide_currency_sign}}{% if tip.wallet.divide_currency == 'EUR' %}{{EUR_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'GBP' %}{{GBP_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'AUD' %}{{AUD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'CAD' %}{{CAD_value|floatformat:'2'}}{% elif tip.wallet.divide_currency == 'JPY' %}{{JPY_value|floatformat:'0'}}{% else %}{{tip.balance_usd|floatformat:'2'}}{% endif %} of BCH!{% elif tip.activated and not tip.expired %}Someone already claimed this one! Create your own at tips.bitcoin.com.{% else %} This tip went unclaimed and has been returned to its owner. Create your own at tips.bitcoin.com{% endif %}" />
 <meta property="og:site_name" content="tips.bitcoin.com">
 <meta name="twitter:image" content="https://tips.bitcoin.com/static/img/card_default.png">
 
@@ -131,6 +131,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {{GBP_value|floatformat:"2"}}
         <br/>
         {% trans "Current Bitcoin Cash (BCH) price" %} <a href="https://markets.bitcoin.com/crypto/BCH" target="_blank">1 BCH = GBP {{tip.wallet.divide_currency_sign}}{{GBP_bch_price|floatformat:"0"}}</a>
+      {% elif tip.wallet.divide_currency == "AUD" %}
+        {{AUD_value|floatformat:"2"}}
+        <br/>
+        {% trans "Current Bitcoin Cash (BCH) price" %} <a href="https://markets.bitcoin.com/crypto/BCH" target="_blank">1 BCH = {{tip.wallet.divide_currency_sign}}{{AUD_bch_price|floatformat:"0"}}</a>
+      {% elif tip.wallet.divide_currency == "CAD" %}
+        {{GBP_value|floatformat:"2"}}
+        <br/>
+        {% trans "Current Bitcoin Cash (BCH) price" %} <a href="https://markets.bitcoin.com/crypto/BCH" target="_blank">1 BCH = {{tip.wallet.divide_currency_sign}}{{CAD_bch_price|floatformat:"0"}}</a>
       {% elif tip.wallet.divide_currency == "JPY" %}
         {{JPY_value|floatformat:"0"}}
         <br/>
@@ -251,6 +259,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <h2 class="ui header">{% trans "What can I do with my Bitcoin Cash (BCH)?" %}</h2>
+    <div class="ui message">
+      <div class="header">
+        Sell it for your local currency
+      </div>
+      <p>
+        Use our anonymous BCH exchange <a href="https://local.bitcoin.com/" target="_blank">local.bitcoin.com</a> to trade for cash, gift cards, or more!
+      </p>
+    </div>
+
+    <div class="ui message">
+      <div class="header">
+        Start cryptocurrency trading!
+      </div>
+      <p>
+        Use our full service exchange <a href="https://exchange.bitcoin.com/" target="_blank">exchange.bitcoin.com</a> to trade for other cryptocurrencies!
+      </p>
+    </div>
+
     <div class="ui message">
       <div class="header">
         Get 20% off from Amazon.com

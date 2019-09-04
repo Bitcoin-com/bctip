@@ -20,9 +20,9 @@ a.listtransactions(acc)
 """
 # Start with hard-coded forex rates. Will be recalculated on creation of new wallet
 # If API for new rates fails, system will fall back to these rates
-CURRENCY_RATES = {'USD': 1, 'EUR': 0.88, 'GBP': 0.79, 'JPY': 109.76}
+CURRENCY_RATES = {'USD': 1, 'EUR': 0.88, 'GBP': 0.79, 'AUD': 1.47, 'CAD': 1.32, 'JPY': 109.76}
 
-CURRENCY_SIGNS = {'USD': '$', 'EUR': '€', 'GBP': '£', 'JPY': '¥'}
+CURRENCY_SIGNS = {'USD': '$', 'EUR': '€', 'GBP': '£', 'AUD': 'AUD $', 'CAD': 'CAD $', 'JPY': '¥'}
 MESSAGES = {}
 THANKS_MESSAGE = _("Thank you!")
 # Translators: Please provide youtube video about bitcoin in your language
@@ -380,7 +380,8 @@ def get_forex_rates(force=False):
     if forex_obj and not force:
         return forex_obj
     #forex_obj = {'USD': 1, 'EUR': 0.99, 'GBP': 0.79, 'RUB': 60.0}
-    currencies = ['USD', 'EUR', 'GBP', 'JPY']
+    #Updated forex obj = {'USD': 1, 'EUR': 0.88, 'GBP': 0.79, 'AUD': 1.47, 'CAD': 1.32, 'JPY': 109.76}
+    currencies = ['USD', 'EUR', 'GBP', 'AUD', 'CAD', 'JPY']
     forex_obj = {}
     # Set usd_rate as a float to allow division later
     usd_rate = 1.0
@@ -409,4 +410,4 @@ def get_forex_rates(force=False):
     if forex_obj:
         cache.set(key, forex_obj, 60*60)
         return forex_obj
-    return {'USD': 1, 'EUR': 0.88, 'GBP': 0.79, 'JPY': 109.76}
+    return {'USD': 1, 'EUR': 0.88, 'GBP': 0.79, 'AUD': 1.47, 'CAD': 1.32, 'JPY': 109.76}

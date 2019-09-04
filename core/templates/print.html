@@ -35,7 +35,15 @@
       {% elif tip.wallet.divide_currency == "EUR" %}
         <div class="fiat-amount">~ {{cur_sign}}{{EUR_value|floatformat:"2"}}</div>
         </div>          
-      <div class="exchange-rate">1 BCH = {{cur_sign}}{{EUR_bch_price|floatformat:"0"}} on {{wallet.atime|date:"M d, Y"}}</div> 
+      <div class="exchange-rate">1 BCH = {{cur_sign}}{{EUR_bch_price|floatformat:"0"}} on {{wallet.atime|date:"M d, Y"}}</div>
+      {% elif tip.wallet.divide_currency == "AUD" %}
+        <div class="fiat-amount">~ {{cur_sign}}{{AUD_value|floatformat:"2"}}</div>
+        </div>          
+      <div class="exchange-rate">1 BCH = {{cur_sign}}{{AUD_bch_price|floatformat:"0"}} on {{wallet.atime|date:"M d, Y"}}</div>
+      {% elif tip.wallet.divide_currency == "CAD" %}
+        <div class="fiat-amount">~ {{cur_sign}}{{CAD_value|floatformat:"2"}}</div>
+        </div>          
+      <div class="exchange-rate">1 BCH = {{cur_sign}}{{CAD_bch_price|floatformat:"0"}} on {{wallet.atime|date:"M d, Y"}}</div>
       {% elif tip.wallet.divide_currency == "GBP" %}
         <div class="fiat-amount">~ {{cur_sign}}{{GBP_value|floatformat:"2"}}</div>
         </div>          
