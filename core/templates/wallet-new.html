@@ -85,10 +85,10 @@
     {{ form.price.errors }}
     {{ form.price }}
 </div>
-<div class="field" id="custom-tip-amount"><label>{% trans "Custom Donation Percentage" %}</label>
+<div class="field" id="custom-tip-amount"><label>Custom Donation Percentage</label>
     {{ form.customprice.errors }}
     {{ form.customprice }}
-    <div class="ui small label">{% trans "Extra generous? Donate directly at" %} <a target="_blank" href="https://free.bitcoin.com/">free.bitcoin.com!</a></div>
+    <div class="ui small label">Extra generous? Donate directly at <a target="_blank" href="https://free.bitcoin.com/">free.bitcoin.com!</a></div>
 </div>
 
   
@@ -97,7 +97,7 @@
 
 
   <div class="column">
-    <center><div class="ui bottom pointing label">{% trans "summary" %}</div></center>
+    <center><div class="ui bottom pointing label">summary</div></center>
 
 <table class="ui table" id="summary-table"><thead>
  <th>{% trans "Service" %}</th>
@@ -138,7 +138,7 @@
         </div>
 
         <div class="print-tip-bg-wrap">
-          <div class="tip-label">{% trans "TIP AMOUNT" %}</div>
+          <div class="tip-label">TIP AMOUNT</div>
           <div class="print-tip-amount">
             <div class="crypto-amount" id="crypto-amount"></div>
             <div class="fiat-amount" id="tips-sample_usd"></div>
@@ -147,14 +147,14 @@
         </div>     
         
         <div class="print-tip-link">      
-          <div class="tip-label">{% trans "CLAIM YOUR TIP AT" %}:</div>
-          <div class="print-tip-url">tips.bitcoin.com/{% trans "your-tip-url" %}</div>
+          <div class="tip-label">CLAIM YOUR TIP AT:</div>
+          <div class="print-tip-url">tips.bitcoin.com/your-tip-url</div>
         </div>
 
         <div class="exchange-rate" id="tips-sample-claimby-date"></div>
 
         <div class="message-ctn">
-          <p>{% trans "Message" %}</p>
+          <p>Message</p>
           <div class="print-tip-message" id="tips-sample_msg"></div>
         </div>
 
@@ -163,7 +163,7 @@
         </div>
         
         <div class="print-tip-code">
-          {% trans "Tip ID #" %}
+          Tip ID #
         </div>
       </div>
     </div>

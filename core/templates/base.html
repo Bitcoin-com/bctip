@@ -1,6 +1,5 @@
 {% load i18n %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="{{request.LANGUAGE_CODE}}">
-<script>console.log(`{{request.LANGUAGE_CODE}}`)</script>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="language" content="{{request.LANGUAGE_CODE}}" />
@@ -59,17 +58,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">     
     <div class="row">
       <div class="col-md-12">
-        <h3 class="h3-line">{% trans "Give Bitcoin Cash (BCH) Without Losing Unclaimed Funds" %}</h3>
-        <h1>{% trans "Bitcoin Cash (BCH) Tips" %}</h1>  
-        <a class="btn btn-primary" href="{% url "new" %}">{% trans "Generate New" %}</a>
+        <h3 class="h3-line">Give Bitcoin Cash (BCH) Without Losing Unclaimed Funds</h3> 
+        <h1>Bitcoin Cash (BCH) Tips</h1>  
+        <a class="btn btn-primary" href="{% url "new" %}">Generate New</a>
       </div>
     </div>
       <nav id="main-nav">
         <div class="wrap">
           <ul class="bar">
-            <li {%if request.path == "/en/"%} class="active" {%endif%}><a href="/" class="bch-tip-home">{% trans "Home" %}</a></li>
-            <li {%if "/statistics" in request.path %} class="active" {%endif%}><a href="/statistics" class="statistics">{% trans "Stats" %}</a></li>
-            {%if "/w/" in request.path %}<li  class="active" ><a class="tip-creation">{% trans "Tip Management" %}</a></li>{%endif%}
+            <li {%if request.path == "/en/"%} class="active" {%endif%}><a href="/" class="bch-tip-home">Home</a></li>
+            <li {%if "/statistics" in request.path %} class="active" {%endif%}><a href="/statistics" class="statistics">Stats</a></li>
+            {%if "/w/" in request.path %}<li  class="active" ><a class="tip-creation">Tip Management</a></li>{%endif%}
             {%if "/gratuity-example/" in request.path %}<li  class="active" ><a class="tip-example">Sample Tip</a></li>{%endif%}
           </ul>          
         </div>

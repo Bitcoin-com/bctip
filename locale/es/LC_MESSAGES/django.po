@@ -96,10 +96,6 @@ msgstr "Localización"
 msgid "BCTips can be created in several languages and used all over the world"
 msgstr "BCTips se pueden crear en varios idiomas y utilizados en todo el mundo"
 
-#: core/templates/base.html:63
-msgid "Generate New"
-msgstr "Baols"
-
 #: core/templates/index.html:85
 msgid "Free"
 msgstr "Gratis"

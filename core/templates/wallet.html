@@ -39,12 +39,12 @@
 <!--Hashtag: {% if wallet.hashtag %}{{wallet.hashtag}}{% else %}<i>not set</i>{%endif%}<br/><br/>-->
 </div>
 </div>
-<a class="ui submit bch-gold button printbtn" target="_blank" href="./print"><i class="download icon"></i>{% trans "Print Tips" %}</a>
+<a class="ui submit bch-gold button printbtn" target="_blank" href="./print"><i class="download icon"></i>Print Tips</a>
 
 </div>
 
 <br/>
-<div class="ui tiny positive message">{% trans "You can also give BCH Tips by emailing or messaging the tip URL" %}.</div>
+<div class="ui tiny positive message">{% trans "You can also give BCH Tips by emailing or messaging the tip URL." %}</div>
 <form action="./comments/" method="post">{% csrf_token %}
 
 <table class="ui striped unstackable table">
@@ -54,15 +54,15 @@
 	{% trans "Comment" %}
 	<span class="tooltip">(what's this?)
 	  <span class="tooltiptext">
-		  {% trans "Use comments to label your tips" %}!<br/><br/>
+		  Use comments to label your tips!<br/><br/>
 
-		  {% trans "When your tip is claimed, you'll receive an email notification including your saved comment" %}. <br/><br/>
+		  When your tip is claimed, you'll receive an email notification including your saved comment. <br/><br/>
 
-		  {% trans "Example" %}: <br/>
+		  Example: <br/>
 		  <ol>
-		  	<li>{% trans "Save 'Library' as a comment on a tip" %}</li>
-		  	<li>{% trans "Leave tip in the library" %}</li>
-		  	<li>{% trans "You'll know someone claimed your library tip when you receive an email notification with your comment 'Library'" %}</li>
+		  	<li>Save "Library" as a comment on a tip</li>
+		  	<li>Leave tip in the library</li>
+		  	<li>You'll know someone claimed your library tip when you receive an email notification with your comment "Library" ;)</li>
 		  </ol>
 	  </span>
 	<span>

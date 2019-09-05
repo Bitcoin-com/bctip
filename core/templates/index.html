@@ -2,10 +2,10 @@
 {% block nav_main %}active{%endblock%}
 {% block content %}
 
-<h1>{% trans "What are Bitcoin.com Tips?" %}</h1>
+<h1>What are Bitcoin.com Tips?</h1>
 
 <p id="intro-info">
-  {% trans "Create tips to give Bitcoin Cash (BCH) by email or printable tickets. Recipients redeem tips by visiting a web page with instructions" %} <a href="{% url "tips_example" %}">({% trans "example" %})</a>.
+  Create tips to give Bitcoin Cash (BCH) by email or printable tickets. Recipients redeem tips by visiting a web page with instructions <a href="{% url "tips_example" %}">(example)</a>.
 </p>
 <p>
   
@@ -15,10 +15,10 @@
   <div class="col-md-4">
     <div class="card mb-3">
       <div class="card-header faq-header">
-        <h3>{% trans "Customize" %}</h3>
+        <h3>Customize</h3>
       </div>
       <div class="card-block">
-        <p>{% trans "Set your message and amount" %}.</p>           
+        <p>{% trans "Set your message and amount." %}</p>           
       </div>
     </div>
   </div>
@@ -26,10 +26,10 @@
   <div class="col-md-4">
     <div class="card mb-3">
       <div class="card-header faq-header"> 
-        <h3>{% trans "Use Crypto as Cash" %}</h3>
+        <h3>Use Crypto as Cash</h3>
       </div>
       <div class="card-block">        
-        <p>{% trans "Proof of work for appreciation" %}.</p>         
+        <p>Proof of work for appreciation.</p>         
       </div>
     </div>
   </div>
@@ -37,28 +37,35 @@
   <div class="col-md-4">
     <div class="card mb-3">
       <div class="card-header faq-header">
-        <h3>{% trans "Follow Up" %}</h3>
+        <h3>Follow Up</h3>
       </div>
       <div class="card-block">    
-        <p>{% trans "Know when your tips are redeemed" %}.</p>           
+        <p>{% trans "Know when your tips are redeemed." %}</p>           
       </div>
     </div>
   </div>
 </div>
 
 <center>
-    <h1>{% trans "Unclaimed tips are automatically returned" %}!</h1>
-    <a class="btn btn-primary" href="{% url "new" %}">{% trans "Get Started" %}</a>
+    <h1>Unclaimed tips are automatically returned!</h1>        
+  
+    <a class="btn btn-primary" href="{% url "new" %}">Get Started</a>
+
     <br><br>
-    <a href="https://bitcoincash.org/" target="_blank">{% trans "What is Bitcoin Cash?" %}</a>
+ 
+    <a href="https://bitcoincash.org/" target="_blank">What is Bitcoin Cash?</a>
+
     <br><br>
-    {% trans "Contact" %}: <a href="mailto:tips-support@bitcoin.com">tips-support@bitcoin.com</a>
-    <br><br>
-    <svg id="telegram-svg" viewBox="0 0 94 94" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="66.67%" y1="16.67%" x2="41.67%" y2="75%" id="a"><stop stop-color="#37AEE2" offset="0%"/><stop stop-color="#1E96C8" offset="100%"/></linearGradient><linearGradient x1="61.235%" y1="43.69%" x2="74.706%" y2="80.24%" id="b"><stop stop-color="#EFF7FC" offset="0%"/><stop stop-color="#FFF" offset="100%"/></linearGradient></defs><g transform="translate(-.124 .629)" fill="none"><circle fill="url(#a)" cx="46.735" cy="46.654" r="46.535"/><path d="M38.203 67.983c-1.507 0-1.251-.57-1.771-2.005l-4.433-14.59 34.125-20.245" fill="#C8DAEA"/><path d="M38.203 67.983c1.164 0 1.678-.532 2.327-1.164l6.205-6.033-7.74-4.667" fill="#A9C9DD"/><path d="M38.994 56.12l18.754 13.856c2.14 1.18 3.684.569 4.217-1.987L69.6 32.016c.781-3.133-1.194-4.554-3.242-3.625L21.533 45.675c-3.06 1.228-3.042 2.934-.558 3.695l11.503 3.59 26.63-16.8c1.258-.763 2.411-.353 1.464.488" fill="url(#b)"/></g></svg><span id="telegram-desktop"> {% trans "Get the latest Bitcoin Cash News at the" %} <a href="https://t.me/BitcoinCashUpdates" target="_blank">{% trans "Bitcoin Cash Telegram Channel" %}</a></span><span id="telegram-mobile">&nbsp;<a href="https://t.me/BitcoinCashUpdates" target="_blank">Bitcoin Cash Telegram</a></span>
+  
+    Contact: <a href="mailto:tips-support@bitcoin.com">tips-support@bitcoin.com</a>
 
     <br><br>
 
-    <a href="https://tips.bitcoin.com/">tips.bitcoin.com</a> {% trans "is an" %} <a href="https://github.com/bitcoin-com/bctip" target="_blank">{% trans "open source" %}</a> {% trans "fork of" %} <a href="https://www.bctip.org/en/" target="_blank">bctip.org</a>
+    <svg id="telegram-svg" viewBox="0 0 94 94" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="66.67%" y1="16.67%" x2="41.67%" y2="75%" id="a"><stop stop-color="#37AEE2" offset="0%"/><stop stop-color="#1E96C8" offset="100%"/></linearGradient><linearGradient x1="61.235%" y1="43.69%" x2="74.706%" y2="80.24%" id="b"><stop stop-color="#EFF7FC" offset="0%"/><stop stop-color="#FFF" offset="100%"/></linearGradient></defs><g transform="translate(-.124 .629)" fill="none"><circle fill="url(#a)" cx="46.735" cy="46.654" r="46.535"/><path d="M38.203 67.983c-1.507 0-1.251-.57-1.771-2.005l-4.433-14.59 34.125-20.245" fill="#C8DAEA"/><path d="M38.203 67.983c1.164 0 1.678-.532 2.327-1.164l6.205-6.033-7.74-4.667" fill="#A9C9DD"/><path d="M38.994 56.12l18.754 13.856c2.14 1.18 3.684.569 4.217-1.987L69.6 32.016c.781-3.133-1.194-4.554-3.242-3.625L21.533 45.675c-3.06 1.228-3.042 2.934-.558 3.695l11.503 3.59 26.63-16.8c1.258-.763 2.411-.353 1.464.488" fill="url(#b)"/></g></svg><span id="telegram-desktop"> Get the latest Bitcoin Cash News at the <a href="https://t.me/BitcoinCashUpdates" target="_blank">Bitcoin Cash Telegram Channel</a></span><span id="telegram-mobile">&nbsp;<a href="https://t.me/BitcoinCashUpdates" target="_blank">Bitcoin Cash Telegram</a></span>
+
+    <br><br>
+
+    <a href="https://tips.bitcoin.com/">tips.bitcoin.com</a> is an <a href="https://github.com/bitcoin-com/bctip" target="_blank">open source</a> fork of <a href="https://www.bctip.org/en/" target="_blank">bctip.org</a>
   </center>
   <br><br>
 
