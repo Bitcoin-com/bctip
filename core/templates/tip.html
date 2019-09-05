@@ -62,18 +62,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">     
     <div class="row">
       <div class="col-md-12">
-        <h3 class="h3-line">{% trans "Give Bitcoin Cash (BCH) Without Losing Unclaimed Funds" %}</h3> 
-        <h1>{% trans "Bitcoin Cash (BCH) Tips" %}</h1>  
-        <a class="btn btn-primary" href="{% url "new" %}">{% trans "Generate New" %}</a>
+        <h3 class="h3-line">Give Bitcoin Cash (BCH) Without Losing Unclaimed Funds</h3> 
+        <h1>Bitcoin Cash (BCH) Tips</h1>  
+        <a class="btn btn-primary" href="{% url "new" %}">Generate New</a>
       </div>
     </div>
       <nav id="main-nav">
         <div class="wrap">
           <ul class="bar">
-            <li {%if request.path == "/en/"%} class="active" {%endif%}><a href="/" class="bch-tip-home">{% trans "Home" %}</a></li>
-            <li {%if "/statistics" in request.path %} class="active" {%endif%}><a href="/statistics" class="statistics">{% trans "Stats" %}</a></li>
+            <li {%if request.path == "/en/"%} class="active" {%endif%}><a href="/" class="bch-tip-home">Home</a></li>
+            <li {%if "/statistics" in request.path %} class="active" {%endif%}><a href="/statistics" class="statistics">Stats</a></li>
             {%if "/w/" in request.path %}<li  class="active" ><a class="tip-creation">Tip Management</a></li>{%endif%}
-            {%if "/gratuity-example/" in request.path %}<li  class="active" ><a class="tip-example">{% trans "Sample Tip" %}</a></li>{%endif%}
+            {%if "/gratuity-example/" in request.path %}<li  class="active" ><a class="tip-example">Sample Tip</a></li>{%endif%}
           </ul>          
         </div>
       </nav>
@@ -117,7 +117,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 {% if not tip.activated and not tip.expired %}
 <h2 class="ui header">{% trans "You have" %} {{tip.balance_btc}}
-{% if request.LANGUAGE_CODE != "fi" %} Bitcoin Cash (BCH) {% trans "to claim" %}
+{% if request.LANGUAGE_CODE != "fi" %} Bitcoin Cash (BCH) to claim
 {%else%}bitcoinia{%endif%}
 
 <div class="sub header">
@@ -201,41 +201,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="ui message">
       <div class="header gold claim-steps">
-        {% trans "Step" %} 1
+        Step 1
       </div>
       
       <p>
-        {% trans "Open your Bitcoin Cash (BCH) wallet" %}.
+        Open your Bitcoin Cash (BCH) wallet.
       </p>
       <p>
-        {% trans "Don't have one" %}? <a href="https://wallet.bitcoin.com/" target="_blank">{% trans "Download the Bitcoin.com wallet for free" %}!</a>
+        Don't have one? <a href="https://wallet.bitcoin.com/" target="_blank">Download the Bitcoin.com wallet for free!</a>
       </p>
       <img class="claim-steps-img" src="/static/img/phone-download.png" alt="Open your wallet" />
       <hr class="claim-steps-hr">
       <div class="header gold claim-steps">
-        {% trans "Step" %} 2
+        Step 2
       </div>  
       <p>
-        {% trans "Select \"Receive\"" %}
+        Select "Receive"
       </p>
       <img class="claim-steps-img" src="/static/img/phone-receive.png" alt="Open your wallet" />  
       <hr class="claim-steps-hr">
       <div class="header gold claim-steps">
-        {% trans "Step" %} 3
+        Step 3
       </div>  
       <p>
-        {% trans "You'll see a QR code and a string of numbers and letters" %}.
+        You'll see a QR code and a string of numbers and letters.
       </p>
       <p>
-        {% trans "That's your Bitcoin Cash (BCH) address! Tap the address to copy it to your clipboard." %}
+        That's your Bitcoin Cash (BCH) address! Tap the address to copy it to your clipboard.
       </p>
       <img class="claim-steps-img" src="/static/img/phone-address.png" alt="Open your wallet" />
       <hr class="claim-steps-hr">
       <div class="header gold claim-steps">
-        {% trans "Step" %} 4
+        Step 4
       </div>  
       <p>
-        {% trans "Paste your address in the \'Send to:\'' field above, and click the \'Send\' button. Your tip will be sent instantly." %}
+        Paste your address in the "Send to:" field above, and click the "Send" button. Your tip will be sent instantly.
       </p>
       <img class="claim-steps-img" src="/static/img/phone-payment-received.png" alt="Open your wallet" />
     </div>
@@ -249,7 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="ui list">
       <li>{% trans "Instant peer to peer transactions" %}</li>
       <li>{% trans "Worldwide payments" %}</li>
-      <li>{% trans "Very low processing fees" %}</li>
+      <li>{% trans "Very low or zero processing fees" %}</li>
       <li>{% trans "And much more" %}!</li>
     </ul>
     <p>{% trans "Bitcoin Cash (BCH) uses peer to peer technology to operate with no central authority" %}; {% trans "managing transactions and issuing bitcoins are carried out" %} <b>{% trans "collectively by the network" %}</b>. 
