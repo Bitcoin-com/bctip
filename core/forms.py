@@ -6,7 +6,7 @@ from django.utils.translation import ugettext as _
 from django.utils.translation import ugettext_lazy as _l
 from django.conf import settings
 
-CURRENCIES = (('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'), ('JPY', 'JPY'))
+CURRENCIES = (('USD', 'USD'), ('EUR', 'EUR'), ('GBP', 'GBP'), ('AUD', 'AUD'), ('CAD', 'CAD'), ('JPY', 'JPY'))
 TARGET_LANGUAGES = settings.LANGUAGES
 DIVIDE_BY = (("1", "1"), ("2", "2"), ("5", "5"), ("10", "10"),
              ("25", "25"), ("50", "50"), ("100", "100"))

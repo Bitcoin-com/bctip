@@ -95,15 +95,21 @@ def printHTML(request, key):
         jpy_rate = all_forex_rates['JPY']
         gbp_rate = all_forex_rates['GBP']
         eur_rate = all_forex_rates['EUR']
+        aud_rate = all_forex_rates['AUD']
+        cad_rate = all_forex_rates['CAD']
 
         jpy_value = round(jpy_rate*tips[0].balance_usd,0)
         gbp_value = round(gbp_rate*tips[0].balance_usd,0)
         eur_value = round(eur_rate*tips[0].balance_usd,0)
+        aud_value = round(aud_rate*tips[0].balance_usd,0)
+        cad_value = round(aud_rate*tips[0].balance_usd,0)
         
         usd_bch_price = get_avg_rate()
         jpy_bch_price = round(usd_bch_price * jpy_rate,0)
         gbp_bch_price = round(usd_bch_price * gbp_rate,0)
         eur_bch_price = round(usd_bch_price * eur_rate,0)
+        aud_bch_price = round(usd_bch_price * aud_rate, 0)
+        cad_bch_price = round(usd_bch_price * cad_rate, 0)
 
         ctx['JPY_bch_price'] = jpy_bch_price
         ctx['JPY_value'] = jpy_value
@@ -113,6 +119,12 @@ def printHTML(request, key):
 
         ctx['EUR_bch_price'] = eur_bch_price
         ctx['EUR_value'] = eur_value
+
+        ctx['AUD_bch_price'] = aud_bch_price
+        ctx['AUD_value'] = aud_value
+
+        ctx['CAD_bch_price'] = cad_bch_price
+        ctx['CAD_value'] = cad_value
 
     #print Context(ctx)    
 
@@ -384,17 +396,23 @@ def tip(request, key):
         jpy_rate = all_forex_rates['JPY']
         gbp_rate = all_forex_rates['GBP']
         eur_rate = all_forex_rates['EUR']
+        aud_rate = all_forex_rates['AUD']
+        cad_rate = all_forex_rates['CAD']
 
         jpy_value = round(jpy_rate*tip.balance_usd,0)
         gbp_value = round(gbp_rate*tip.balance_usd,0)
         eur_value = round(eur_rate*tip.balance_usd,0)
+        aud_value = round(aud_rate*tip.balance_usd,0)
+        cad_value = round(aud_rate*tip.balance_usd,0)
         
         usd_bch_price = get_avg_rate()
         jpy_bch_price = round(usd_bch_price * jpy_rate,0)
         gbp_bch_price = round(usd_bch_price * gbp_rate,0)
         eur_bch_price = round(usd_bch_price * eur_rate,0)
+        aud_bch_price = round(usd_bch_price * aud_rate, 0)
+        cad_bch_price = round(usd_bch_price * cad_rate, 0)
 
-        ctx = {'tip': tip, 'rate': usd_bch_price, 'form': form, 'JPY_value': jpy_value, 'GBP_value': gbp_value, 'EUR_value': eur_value, 'JPY_bch_price': jpy_bch_price, 'GBP_bch_price': gbp_bch_price, 'EUR_bch_price': eur_bch_price}
+        ctx = {'tip': tip, 'rate': usd_bch_price, 'form': form, 'JPY_value': jpy_value, 'GBP_value': gbp_value, 'EUR_value': eur_value, 'AUD_value': aud_value, 'CAD_value': cad_value, 'JPY_bch_price': jpy_bch_price, 'GBP_bch_price': gbp_bch_price, 'EUR_bch_price': eur_bch_price, 'AUD_bch_price': aud_bch_price, 'CAD_bch_price': cad_bch_price}
         #print(ctx)
     else:
         ctx = {'tip': tip, 'rate': get_avg_rate(), 'form': form}
