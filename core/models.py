@@ -250,7 +250,7 @@ def get_bdc_avg_rate(force=False):
         #Note: this approach of using site, hdr, .Request, then .urlopen
         #      was required for API pulls to work in local testing
         #      Leave in for now but mamke sure this is also working in production
-        site= "https://index-api.bitcoin.com/api/v0/cash/pulse"
+        site= "https://markets.api.bitcoin.com/live/bitcoin"
         hdr = {'User-Agent': 'dev',}
 
 
@@ -258,7 +258,7 @@ def get_bdc_avg_rate(force=False):
             site, headers=hdr)
         bitcoindotcom = urllib2.urlopen(req).read()
         bitcoindotcom = json.loads(bitcoindotcom)
-        rate = int((float(bitcoindotcom['price']))/100.0)
+        rate = int(bitcoindotcom['BCH'])
         cache.set(key, rate, 60*60)  # cache for an hour
         return rate
     except Exception as e:
