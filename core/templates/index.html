@@ -2,8 +2,14 @@
 {% block nav_main %}active{%endblock%}
 {% block content %}
 
+<div style="padding:12px; border: 2px solid #0fcb97; border-radius: 5px; margin: 24px 0px; background-color:rgb(15, 203, 151, 0.1)">
+<h1>Bitcoin.com Tips is moving to Gifts</h1>
+<p id="gifts-info">
+  Visit <a href="https://gifts.bitcoin.com/">gifts.bitcoin.com</a> to create BCH gifts that can be redeemed by scanning with a wallet (unclaimed gifts are automatically returned!)
+</p>
+<p>Tips created with tips.bitcoin.com will still work and be automatically returned on expiration, but creating new tips is no longer supported.</p>
+</div>
 <h1>What are Bitcoin.com Tips?</h1>
-
 <p id="intro-info">
   Create tips to give Bitcoin Cash (BCH) by email or printable tickets. Recipients redeem tips by visiting a web page with instructions <a href="{% url "tips_example" %}">(example)</a>.
 </p>
@@ -49,9 +55,7 @@
 <center>
     <h1>Unclaimed tips are automatically returned!</h1>        
   
-    <a class="btn btn-primary" href="{% url "new" %}">Get Started</a>
-
-    <br><br>
+    
  
     <a href="https://bitcoincash.org/" target="_blank">What is Bitcoin Cash?</a>
 
