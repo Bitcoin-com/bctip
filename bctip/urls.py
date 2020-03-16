@@ -8,7 +8,7 @@ admin.autodiscover()
 
 urlpatterns = i18n_patterns('',
     url(r'^$', 'core.views.home', name='home'),
-    url(r'^new/$', 'core.views.new', name='new'),
+    #url(r'^new/$', 'core.views.new', name='new'),
     url(r'^statistics/$', 'core.views.statistics', name='statistics'),
     url(r'^(?P<key>\w+-\w+-\w+-\w+-\w+)$', 'core.views.tip_redir'),
     url(r'^(?P<key>\w+-\w+-\w+-\w+-\w+)/$', 'core.views.tip'),
