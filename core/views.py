@@ -363,8 +363,9 @@ def tip(request, key):
             if tip.activated:
                 return HttpResponse("Timeout error")
             # just check
-            if BITCOIND.getbalance(tip.wallet.get_account(), 1) < tip.balance_btc:
-                return render_to_response("not_enough.html", context_instance=RequestContext(request, {}))
+            # eliminate this check bc getbalance method has changed
+            #if BITCOIND.getbalance(tip.wallet.get_account(), 1) < tip.balance_btc:
+            #    return render_to_response("not_enough.html", context_instance=RequestContext(request, {}))
             tip.atime = datetime.datetime.now()
             tip.activated = True
             tip.bcaddr = form.cleaned_data['bcaddr']
